@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el numero</title>
+</head>
+<body>
+
+<h1>Adivina el numero entre 1 y 100</h1>
+<p>Escribe tu numero y presiona "Adivinar".</p>
+
+<input type="text" id="numeroInput">
+<button onclick="adivinarNumero()">Adivinar</button>
+
+<script>
+    // Generamos un numero aleatorio entre 1 y 100
+    var numeroAleatorio = Math.floor(Math.random() * 100) + 1;
+
+    function adivinarNumero() {
+        // Obtenemos el valor ingresado por el usuario
+        var numeroUsuario = parseInt(document.getElementById("numeroInput").value);
+        
+        // Verificamos si el numero ingresado es igual al número aleatorio
+        if (numeroUsuario === numeroAleatorio) {
+            alert("¡Felicidades! ¡Has adivinado el numero!");
+        } else if (numeroUsuario < numeroAleatorio) {
+            alert("Intenta con un numero mas grande.");
+        } else {
+            alert("Intenta con un numero mas pequeño.");
+        }
+    }
+</script>
+
+</body>
+</html>

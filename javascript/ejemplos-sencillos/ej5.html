@@ -1,0 +1,36 @@
+<html lang="es">
+<head>
+    <title>Ejemplo de javascript con funciones</title>
+    <meta charset="UTF-8">
+    <script language="Javascript">
+            function cambiatexto1() {
+                document.getElementById("identificador1").innerHTML = "Estoy modificando el parrafo con javascript";
+            }
+            function cambiatexto2() {
+                identificador1.innerHTML = "Cambio el texto de nuevo";
+          
+               
+            }
+            function cambiacolor1() {
+                document.getElementById('identificador2').style.color= 'red';
+               
+            }
+            function cambiacolor2() {
+                identificador2.style.color= 'blue';
+               
+            }
+    </script>
+</head>
+<body>
+        <p id="identificador1"> Hola mundo</p>
+        <p id="identificador2"> Javascript</p>
+        <input type="button" value="Pulsa para cambiar el parrafo que tiene un id=identificador1" onclick="cambiatexto1();" >
+   </br></br>
+        <input type="button" value="Pulsa para cambiar el color del parrafo id=identificador2" onclick="cambiacolor1();" >
+    </br></br>
+        <input type="button" value="Pulsa para cambiar el parrafo referenciandolo solo con el id id=identificador1" onclick="cambiatexto2();" >
+    </br></br>
+        <input type="button" value="Pulsa para cambiar el color del parrafo id=identificador2" onclick="cambiacolor2();" >
+    
+    </body>
+</html>

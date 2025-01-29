@@ -1,0 +1,22 @@
+<html lang="es">
+<head>
+    <title>Ejemplo de eval().</title>
+    <meta charset="UTF-8">
+    <script language="Javascript">
+        function pruebaEval() {
+        const parrafoTexto = document.getElementById("texto");
+        var operacion = prompt("Introduzca una operación matemática.","");
+            if (operacion == null) {
+                  parrafoTexto.innerHTML = "Se ha cancelado la operación."; }
+            else if (operacion == "") {
+                   parrafoTexto.innerHTML = "No se ha introducido operación."; }
+            else {
+                    parrafoTexto.innerHTML = "El resultado es <b>"
+                    +eval(operacion)+"</b>."; }
+        }
+    </script>
+</head>
+<body onload="pruebaEval()">
+<p id="texto">Aquí se muestra el resultado de eval().</p>
+</body>
+</html>

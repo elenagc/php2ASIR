@@ -1,0 +1,18 @@
+<html lang="es">
+<head>
+    <title>Ejemplos javascript</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+        <p id="identificador1"> Hola mundo</p>
+        <p id="identificador2"> Javascript</p>
+        <input type="button" value="Pulsa para cambiar el parrafo que tiene un id=identificador1" onclick="document.getElementById('identificador1').innerHTML = 'Estoy modificando el parrafo con javascript'" >
+   </br></br>
+        <input type="button" value="Pulsa para cambiar el color del parrafo id=identificador2" onclick="document.getElementById('identificador2').style.color= 'red'" >
+    </br></br>
+        <input type="button" value="Pulsa para cambiar el parrafo referenciandolo solo con el id id=identificador1" onclick="identificador1.innerHTML = 'Estoy modificando el parrafo usando el identificador y la funcion innerHTML'" >
+    </br></br>
+        <input type="button" value="Pulsa para cambiar el color del parrafo id=identificador2" onclick="identificador2.style.color= 'blue'" >
+    
+    </body>
+</html>
