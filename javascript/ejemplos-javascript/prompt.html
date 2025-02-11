@@ -1,0 +1,27 @@
+<html lang="es">
+<head>
+    <title>Ejemplo de prompt().</title>
+    <meta charset="UTF-8">
+    <script language="Javascript">
+            function muestraTexto() {
+               // const parrafoTexto = document.getElementById("texto");
+                var textoprueba = prompt("¡Este es un mensaje escrito mediante propmt()!.", "");
+                if (textoprueba == null) {
+                    document.getElementById("texto").innerHTML = "Se ha pulsado el botón <b>Cancelar</b>.";
+                }
+                else if (textoprueba=="") {
+                    document.getElementById("texto1").innerHTML = "No se introducido ningún valor.";
+                }
+                else {
+                    document.getElementById("casa").innerHTML = "id es casa. Se ha introducido el valor <b>" + textoprueba + "<b>";
+                  document.getElementById("texto1").innerHTML = "id es texto1. Estoy cambiando el texto 1" + textoprueba + "<b>";
+                    }
+            }
+    </script>
+</head>
+<body>
+        <p id="casa"></p>
+        <p id="texto1"> </p>
+        <button value="Pulsa para llamar a la funcion" onclick="muestraTexto();" ></button>
+</body>
+</html>
